@@ -1,0 +1,19 @@
+{
+  "name": "local_test",
+  "description": "The local vagrant Chef environment",
+  "default_attributes": {
+  "zabbix": {
+      "agent": {
+        "servers": [
+          "LOCALHOST"
+        ]
+        "groups": [
+	 "Discovered hosts"
+	]
+      }
+    }
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment"
+}
+

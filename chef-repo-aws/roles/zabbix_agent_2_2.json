@@ -1,0 +1,7 @@
+{
+  "name": "zabbix_agent_2_2",
+  "run_list": [
+    "recipe[zabbix_agent_remove]",
+    "recipe[zabbix_agent_install]"
+  ]
+}

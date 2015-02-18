@@ -1,0 +1,11 @@
+PidFile=/var/run/zabbix/zabbix_agentd.pid
+LogFile=/var/log/zabbix/zabbix_agentd.log
+LogFileSize=512
+DebugLevel=4
+EnableRemoteCommands=1
+LogRemoteCommands=1
+Server=<%= @zabbix_server_address %>
+ListenPort=10050
+ServerActive=<%= @zabbix_server_address %>
+Hostname=<%= @zabbix_agent_hostname %>
+Include=/etc/zabbix/zabbix_agentd.d/
