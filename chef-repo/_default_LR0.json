@@ -1,0 +1,23 @@
+{
+  "name": "_default_LR0",
+  "default_attributes": {
+    "mysql": {
+      "listen_ports": [
+        "3306"
+      ]
+    },
+  "zabbix": {
+      "agent": {
+        "servers": [
+          "16.177.36.151"
+        ],
+        "groups": [
+	 "Discovered hosts"
+	]
+      }
+    }
+   },
+  "json_class": "Chef::Environment",
+  "description": "LR0 Default Environment",
+  "chef_type": "environment"
+}
